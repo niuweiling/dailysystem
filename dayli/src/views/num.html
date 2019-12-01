@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<style>
+	.box{
+		width: 300px;
+		height: 300px;
+	}
+</style>
+<body>
+<div class="box">
+
+</div>
+</body>
+</html>
+<script>
+	let box=document.querySelector('div');
+	setInterval(function () {
+        box.style.background=rgb();
+    },1000);
+
+    function rgb(){
+    let r=Math.floor(Math.random()*256);
+    let g=Math.floor(Math.random()*256);
+    let b=Math.floor(Math.random()*256);
+      return "rgb(" + r + "," + g + "," + b + ")"
+     }
+
+
+    // let rgb=(r+','+g+','+b)
+    // console.log(rgb);
+    // let color=box.style.rgb;
+    // return rgb;
+
+
+
+
+</script>
